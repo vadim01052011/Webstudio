@@ -12,6 +12,10 @@
 /* font-family: "Roboto", sans-serif; */
 /* font-family: "Raleway", sans-serif; */
 
+img {
+    display: block;
+}
+
 a {
     text-decoration: none;
     padding: 0;
