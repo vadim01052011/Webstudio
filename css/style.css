@@ -1,16 +1,19 @@
-:root {
-    --background12text-color: #FFFFFF;
-    --h2h3text-color: #212121;
-    --sectionourteam-background: #F5F4FA;
-    --footer-background: #2F303A;
-    --text-color: #757575;
-    --footeradress-color: rgba(255, 255, 255, 0.6);
-    --accent-color:  #2196F3;
-    --logo-color: #000;
-}
-
 /* font-family: "Roboto", sans-serif; */
 /* font-family: "Raleway", sans-serif; */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0; 
+}
 
 img {
     display: block;
@@ -30,12 +33,6 @@ ul {
 h1, h2, h3, h4, p {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0; 
 }
 
 
