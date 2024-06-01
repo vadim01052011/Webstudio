@@ -49,6 +49,7 @@ h1, h2, h3, h4, p {
     background-color: var(--footer-background);
 }
 
+/* header */
 .nav-link {
 color: var(--h2h3text-color);
 font-family: "Roboto", sans-serif;
@@ -76,7 +77,6 @@ line-height: 1.14;
 letter-spacing: 0.28px;
 }
 
-
 .header-link:hover,
 .header-link:focus {
     color: var(--accent-color);
@@ -100,10 +100,9 @@ line-height: 1.38;
 letter-spacing: 0.78px;
 }
 
-
+/* секція герой */
 .hero-title {
     color: var(--background12text-color);
-
 text-align: center;
 font-family: "Roboto", sans-serif;
 font-size: 44px;
@@ -124,9 +123,10 @@ line-height: 1.87;
 letter-spacing: 0.96px;
 }
 
+
+/* секція переваги */
 .perevagy-title {
     color: var(--h2h3text-color);
-
 font-family: "Roboto", sans-serif;
 font-size: 14px;
 font-weight: 700;
@@ -137,7 +137,6 @@ text-transform: uppercase;
 
 .perevagy-text {
     color: var(--text-color);
-
 font-family: "Roboto", sans-serif;
 font-size: 14px;
 font-weight: 400;
@@ -145,9 +144,9 @@ line-height: 1.71;
 letter-spacing: 0.42px;
 }
 
+/* секція чим ми займаємося */
 .whatwearedoing-title {
     color: var(--h2h3text-color);
-
 text-align: center;
 font-family: "Roboto", sans-serif;
 font-size: 36px;
@@ -156,15 +155,16 @@ line-height: 1.16;
 letter-spacing: 1.08px;
 }
 
+
+/* секція Наша команда */
 .team-title {
     color: var(--h2h3text-color);
-
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 1.08px;
+text-align: center;
+font-family: "Roboto", sans-serif;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: 1.08px;
 }
 
 .team-title2 {
@@ -188,7 +188,7 @@ line-height: 1.18;
 letter-spacing: 0.48px;
 }
 
-
+/* footer */
 .logo-footer {
     color: var(--background12text-color);
 font-family: "Raleway", sans-serif;
@@ -234,19 +234,13 @@ line-height: 1.71;
 letter-spacing: 0.42px;
 }
 
-.button-item {
-    color: var(--h2h3text-color);
-text-align: center;
-font-family: "Roboto", sans-serif;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.62;
-letter-spacing: 0.48px;
-}
 
+
+
+/* portfolio */
 .button:hover {
-color: var(--background12text-color);
-background-color: var(--accent-color);
+    color: var(--background12text-color);
+    background-color: var(--accent-color);
 }
 
 .allaboutus-title {
