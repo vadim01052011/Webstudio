@@ -37,8 +37,13 @@ h1, h2, h3, h4, p {
 
 
 /* index.html */
+
+
+
 .hero {
     background-color: var(--footer-background);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .team-section {
@@ -50,6 +55,11 @@ h1, h2, h3, h4, p {
 }
 
 /* header */
+.header {
+padding-top: 24px;
+padding-bottom: 25px;
+}
+
 .nav-link {
 color: var(--h2h3text-color);
 font-family: "Roboto", sans-serif;
@@ -125,6 +135,10 @@ letter-spacing: 0.96px;
 
 
 /* секція переваги */
+.perevagy-section {
+    padding-top: 94px;
+}
+
 .perevagy-title {
     color: var(--h2h3text-color);
 font-family: "Roboto", sans-serif;
@@ -145,6 +159,11 @@ letter-spacing: 0.42px;
 }
 
 /* секція чим ми займаємося */
+.whatwearedoing-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .whatwearedoing-title {
     color: var(--h2h3text-color);
 text-align: center;
@@ -157,6 +176,11 @@ letter-spacing: 1.08px;
 
 
 /* секція Наша команда */
+.team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .team-title {
     color: var(--h2h3text-color);
 text-align: center;
@@ -189,6 +213,11 @@ letter-spacing: 0.48px;
 }
 
 /* footer */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .logo-footer {
     color: var(--background12text-color);
 font-family: "Raleway", sans-serif;
@@ -238,6 +267,12 @@ letter-spacing: 0.42px;
 
 
 /* portfolio */
+.section-button{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
 .button:hover {
     color: var(--background12text-color);
     background-color: var(--accent-color);
