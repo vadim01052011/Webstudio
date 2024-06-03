@@ -60,6 +60,18 @@ padding-top: 24px;
 padding-bottom: 25px;
 }
 
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  .nav-list {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+}
+
 .nav-link {
 color: var(--h2h3text-color);
 font-family: "Roboto", sans-serif;
@@ -77,6 +89,13 @@ letter-spacing: 0.28px;
 .nav-link:focus {
   color: var(--accent-color);
 }
+
+.header-list {
+    display: flex;
+    gap: 50px;
+    margin-left: 344px;
+}
+
 
 .header-link {
 color: var(--text-color);
@@ -121,6 +140,10 @@ line-height: 1.36;
 letter-spacing: 2.64px;
 text-transform: uppercase;
 }
+/* 
+.hero-box {
+    justify-content: center;
+} */
 
 .hero-button {
     color: var(--background12text-color);
@@ -131,12 +154,23 @@ font-size: 16px;
 font-weight: 700;
 line-height: 1.87;
 letter-spacing: 0.96px;
+display: block;
+margin: 0 auto;
+margin-top: 30px;
 }
 
 
 /* секція переваги */
 .perevagy-section {
     padding-top: 94px;
+}
+
+.perevagy-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 30px;
 }
 
 .perevagy-title {
@@ -156,6 +190,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; 
 letter-spacing: 0.42px;
+margin-top: 10px;
 }
 
 /* секція чим ми займаємося */
@@ -172,6 +207,12 @@ font-size: 36px;
 font-weight: 700;
 line-height: 1.16;
 letter-spacing: 1.08px;
+margin-bottom: 50px;
+}
+
+.whatwearedoing-list {
+    display: flex;
+    gap: 30px;
 }
 
 
@@ -189,6 +230,16 @@ font-size: 36px;
 font-weight: 700;
 line-height: 1.16;
 letter-spacing: 1.08px;
+margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-img {
+    margin-bottom: 30px;
 }
 
 .team-title2 {
@@ -200,6 +251,7 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.18;
 letter-spacing: 0.48px;
+
 }
 
 .team-text {
@@ -210,6 +262,7 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.18;
 letter-spacing: 0.48px;
+margin-top: 10px;
 }
 
 /* footer */
@@ -243,6 +296,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; 
 letter-spacing: 0.42px;
+margin-top: 20px;
 }
 
 .footer-link2 {
