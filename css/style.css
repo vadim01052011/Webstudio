@@ -203,6 +203,7 @@ margin-bottom: 50px;
 .team-box {
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: var(--background12text-color);
 }
 
 .team-title2 {
