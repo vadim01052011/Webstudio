@@ -15,44 +15,9 @@ body {
     padding: 0; 
 }
 
-img {
-    display: block;
-}
-
-a {
-    text-decoration: none;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3, h4, p {
-    margin: 0;
-    padding: 0;
-}
-
 
 /* index.html */
 
-
-
-.hero {
-    background-color: var(--footer-background);
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
-.team-section {
-    background-color: var(--sectionourteam-background);
-}
-
-.footer {
-    background-color: var(--footer-background);
-}
 
 /* header */
 .header {
@@ -66,7 +31,25 @@ padding-bottom: 25px;
     justify-content: space-between;
 }
 
-  .nav-list {
+.logo-span {
+    color: var(--accent-color);
+font-family: "Raleway", sans-serif;
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+
+.logo {
+    color: var(--logo-color);
+font-family: "Raleway", sans-serif;
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+}
+
+.nav-list {
     display: flex;
     gap: 50px;
     margin-left: 93px;
@@ -74,7 +57,6 @@ padding-bottom: 25px;
 
 .nav-link {
 color: var(--h2h3text-color);
-font-family: "Roboto", sans-serif;
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
@@ -96,10 +78,8 @@ letter-spacing: 0.28px;
     margin-left: 344px;
 }
 
-
 .header-link {
-color: var(--text-color);
-font-family: "Roboto", sans-serif; 
+color: var(--text-color); 
 font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
@@ -111,52 +91,36 @@ letter-spacing: 0.28px;
     color: var(--accent-color);
 }
  
-.logo-span {
-    color: var(--accent-color);
-font-family: "Raleway", sans-serif;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
-}
-
-.logo {
-    color: var(--logo-color);
-font-family: "Raleway", sans-serif;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
-}
 
 /* секція герой */
+.hero {
+    background-color: var(--footer-background);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
 .hero-title {
     color: var(--background12text-color);
-text-align: center;
-font-family: "Roboto", sans-serif;
+    margin: 0 auto;
 font-size: 44px;
 font-weight: 900;
 line-height: 1.36; 
 letter-spacing: 2.64px;
 text-transform: uppercase;
+width: 696px;
+margin-bottom: 30px;
 }
-/* 
-.hero-box {
-    justify-content: center;
-} */
 
 .hero-button {
     color: var(--background12text-color);
 background-color: var(--accent-color);
 text-align: center;
-font-family: "Roboto", sans-serif;
 font-size: 16px;
 font-weight: 700;
 line-height: 1.87;
 letter-spacing: 0.96px;
-display: block;
-margin: 0 auto;
-margin-top: 30px;
+padding: 10px 32px;
 }
 
 
@@ -167,15 +131,11 @@ margin-top: 30px;
 
 .perevagy-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-items: baseline;
     gap: 30px;
 }
 
 .perevagy-title {
     color: var(--h2h3text-color);
-font-family: "Roboto", sans-serif;
 font-size: 14px;
 font-weight: 700;
 line-height: 1.14;
@@ -185,7 +145,6 @@ text-transform: uppercase;
 
 .perevagy-text {
     color: var(--text-color);
-font-family: "Roboto", sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71; 
@@ -202,7 +161,6 @@ margin-top: 10px;
 .whatwearedoing-title {
     color: var(--h2h3text-color);
 text-align: center;
-font-family: "Roboto", sans-serif;
 font-size: 36px;
 font-weight: 700;
 line-height: 1.16;
@@ -220,12 +178,12 @@ margin-bottom: 50px;
 .team-section {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: var(--sectionourteam-background);
 }
 
 .team-title {
     color: var(--h2h3text-color);
 text-align: center;
-font-family: "Roboto", sans-serif;
 font-size: 36px;
 font-weight: 700;
 line-height: 1.16;
@@ -239,37 +197,40 @@ margin-bottom: 50px;
 }
 
 .team-img {
-    margin-bottom: 30px;
+    width: 270px;
+}
+
+.team-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-title2 {
     color: var(--h2h3text-color);
-
 text-align: center;
-font-family: "Roboto", sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.18;
 letter-spacing: 0.48px;
-
+margin-bottom: 10px;
 }
 
 .team-text {
     color: var(--text-color);
 text-align: center;
-font-family: "Roboto", sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.18;
 letter-spacing: 0.48px;
-margin-top: 10px;
 }
 
 /* footer */
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--footer-background);
 }
+
 
 .logo-footer {
     color: var(--background12text-color);
@@ -289,35 +250,38 @@ line-height: 1.38;
 letter-spacing: 0.78px;
 }
 
+.footer-adress {
+    margin-top: 20px;
+}
+
 .footer-link1 {
     color: var(--background12text-color);
-font-family: "Roboto", sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71; 
 letter-spacing: 0.42px;
-margin-top: 20px;
+}
+
+.footer-list {
+    margin-top: 9px;
+}
+
+.footer-item {
+    margin-bottom: 9px;
+
+}
+
+.footer-item:last-child {
+    margin-bottom: 0;
 }
 
 .footer-link2 {
     color: var(--footeradress-color);
-font-family: "Roboto", sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
 }
-
-.footer-link3 {
-    color: var(--footeradress-color);
-font-family: "Roboto", sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 1.71;
-letter-spacing: 0.42px;
-}
-
-
 
 
 /* portfolio */
@@ -334,7 +298,6 @@ letter-spacing: 0.42px;
 
 .allaboutus-title {
     color: var(--h2h3text-color);
-font-family: "Roboto", sans-serif;
 font-size: 18px;
 font-weight: 700;
 line-height: 2.00;
@@ -343,7 +306,6 @@ letter-spacing: 1.08px;
 
 .allaboutus-text {
     color: var(--text-color);
-font-family: "Roboto", sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.87; 
