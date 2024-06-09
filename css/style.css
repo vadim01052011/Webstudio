@@ -286,6 +286,15 @@ letter-spacing: 0.42px;
 
 
 /* portfolio */
+.button-list {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
 .section-button{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -295,6 +304,16 @@ letter-spacing: 0.42px;
 .button:hover {
     color: var(--background12text-color);
     background-color: var(--accent-color);
+}
+
+.allaboutus-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.allaboutus-img {
+    margin-bottom: 20px;
 }
 
 .allaboutus-title {
