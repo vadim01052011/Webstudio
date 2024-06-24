@@ -293,6 +293,7 @@ letter-spacing: 0.42px;
     margin-bottom: 50px;
     margin-left: 0 auto;
     margin-right: 0 auto;
+    justify-content: center;
 }
 
 .section-button{
@@ -306,14 +307,24 @@ letter-spacing: 0.42px;
     background-color: var(--accent-color);
 }
 
+.button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;  
+}
+
 .allaboutus-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.allaboutus-img {
-    margin-bottom: 20px;
+.allaboutus-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .allaboutus-title {
