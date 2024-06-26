@@ -330,9 +330,8 @@ border-color: var(--sectionourteam-background);
 }
 
 .allaboutus-item {
-    flex-basis: calc(100% - 60 / 3);
-    width: 370px;
-height: 404px;
+    display: block;
+    flex-basis: calc((100% - 60px) / 3);
 flex-shrink: 0;
 border: 1px solid #EEE;
 }
