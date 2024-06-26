@@ -308,16 +308,33 @@ letter-spacing: 0.42px;
 }
 
 .button {
+    color: var(--h2h3text-color);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.62; 
+    letter-spacing: 0.48px;  
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
-  padding-right: 22px;  
+  padding-right: 22px;
+  border-radius: 4px;
+border-color: var(--sectionourteam-background);  
 }
 
 .allaboutus-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.allaboutus-item {
+    flex-basis: calc(100% - 60 / 3);
+    width: 370px;
+height: 404px;
+flex-shrink: 0;
+border: 1px solid #EEE;
 }
 
 .allaboutus-box {
@@ -327,12 +344,18 @@ letter-spacing: 0.42px;
     padding-right: 24px;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
 .allaboutus-title {
     color: var(--h2h3text-color);
 font-size: 18px;
 font-weight: 700;
 line-height: 2.00;
 letter-spacing: 1.08px;
+margin-bottom: 4px;
 }
 
 .allaboutus-text {
