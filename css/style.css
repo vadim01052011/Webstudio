@@ -1,6 +1,18 @@
 /* font-family: "Roboto", sans-serif; */
 /* font-family: "Raleway", sans-serif; */
 
+:root {
+    --background12text-color: #FFFFFF;
+    --h2h3text-color: #212121;
+    --sectionourteam-background: #F5F4FA;
+    --footer-background: #2F303A;
+    --text-color: #757575;
+    --footeradress-color: rgba(255, 255, 255, 0.6);
+    --accent-color:  #2196F3;
+    --logo-color: #000;
+    --border-color: #EEE;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -141,6 +153,30 @@ font-weight: 700;
 line-height: 1.14;
 letter-spacing: 0.42px;
 text-transform: uppercase;
+}
+
+.perevagy-item::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-color: var(--sectionourteam-background);
+  background-image: url(../img/antenna.png);
+  display: block;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.perevagy-item:nth-child(2)::before {
+    background-image: url(../img/clock.png);
+}
+
+.perevagy-item:nth-child(3)::before {
+    background-image: url(../img/actens.png);
+}
+
+.perevagy-item:nth-child(4)::before {
+    background-image: url(../img/astronaut.png);
 }
 
 .perevagy-text {
