@@ -8,6 +8,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css" />
@@ -20,7 +25,7 @@
         <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link active">Cтудія</a>
+              <a href="./index.html" class="nav-link active animate__animated animate__flash">Cтудія</a>
             </li>
             <li class="nav-item">
               <a href="./pages/portfolio.html" class="nav-link">Портфоліо</a>
@@ -32,14 +37,14 @@
         </nav>
         <ul class="header-list">
           <li class="header-item">
-            <a href="mailto:info@devstudio.com" class="heading-link">
+            <a href="mailto:info@devstudio.com" class="heading-link animate__animated animate__bounceIn">
               <svg class="header-icon">
                 <use class="header-use" href="./images/symbol-defs.svg#email"></use>
               </svg>
             info@devstudio.com</a>
           </li>
           <li class="header-item">
-            <a href="tel:+380961111111" class="heading-link">
+            <a href="tel:+380961111111" class="heading-link animate__animated animate__bounce">
               <svg class="header-icon">
                 <use class="header-use" href="./images/symbol-defs.svg#smartphone"></use>
               </svg>  
@@ -94,21 +99,21 @@
       <!-- Секція Чим Ми Займаємося -->
       <section class="doing">
         <div class="container doing-ray">
-          <h2 class="doing-title">Чим ми займаємося</h2>
+          <h2 class="doing-title" data-aos="fade-down">Чим ми займаємося</h2>
           <ul class="doing-list">
-            <li class="doing-item">
+            <li class="doing-item"  data-aos="zoom-out-left">
               <img src="./images/computer.jpg" alt="роботазакомп'ютером" class="occupation-picture">
               <div class="doing-background">
                 <p class="doing-text">Десктопні додатки</p>
               </div>
             </li>
-            <li class="doing-item">
+            <li class="doing-item" data-aos="zoom-out-down" data-aos-duration="10">
               <img src="./images/tel.jpg" alt="роботазаноутбуком" class="occupation-picture">
               <div class="doing-background">
                 <p class="doing-text">Мобільні додатки</p>
               </div>
             </li>
-            <li class="doing-item">
+            <li class="doing-item" data-aos="zoom-out-right">
               <img src="./images/tablet.jpg" alt="роботазапланшетом" class="occupation-picture">
               <div class="doing-background">
                 <p class="doing-text">Дизайнерські рішення</p>
@@ -122,7 +127,7 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-item">
+            <li class="team-item" data-aos="flip-left">
               <img src="./images/igor.jpg" alt="Ігор" class="team-image">
               <div class="team-text">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
@@ -159,7 +164,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="zoom-in-up">
               <img src="./images/olga.jpg" alt="Ольга" class="team-image">
               <div class="team-text">
                 <h3 class="team-name">Ольга Рєпіна</h3>
@@ -196,7 +201,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="zoom-in-down">
               <img src="./images/mxtarasov.jpg" alt="Микола" class="team-image">
               <div class="team-text">
                 <h3 class="team-name">Микола Тарасов</h3>
@@ -233,7 +238,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="flip-right">
               <img src="./images/mxirmakov.jpg" alt="Михайло" class="team-image" >
               <div class="team-text">
                 <h3 class="team-name">Михайло Єрмаков</h3>
@@ -278,42 +283,50 @@
         <div class="container">
           <h2 class="clients-title">Постійні клієнти</h2>
           <ul class="clients-list">
-            <li class="clients-item">
+            <li class="clients-item" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <a href="#" class="clients-link">
                 <svg class="clients-icon">
                   <use class="clients-use" href="./images/symbol-defs.svg#square"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-item" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
               <a href="#" class="clients-link">
                 <svg class="clients-icon">
                   <use class="clients-use" href="./images/symbol-defs.svg#tagline"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-item" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
               <a href="#" class="clients-link">
                 <svg class="clients-icon">
                   <use class="clients-use" href="./images/symbol-defs.svg#orange"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-item" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
               <a href="#" class="clients-link">
                 <svg class="clients-icon">
                   <use class="clients-use" href="./images/symbol-defs.svg#foster_peters"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-item" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
               <a href="#" class="clients-link">
                 <svg class="clients-icon">
                   <use class="clients-use" href="./images/symbol-defs.svg#brand_logo"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-item" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <a href="#" class="clients-link">
                 <svg class="clients-icon">
                   <use class="clients-use" href="./images/symbol-defs.svg#company"></use>
@@ -325,7 +338,7 @@
       </section>
     </main>
     <!-- Підвал -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-duration="3000">
       <div class="container bottom">
         <!-- Секція Адреса -->
         <section class="ftrl-address">
@@ -435,5 +448,9 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

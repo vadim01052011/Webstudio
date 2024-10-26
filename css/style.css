@@ -68,6 +68,47 @@
   font-weight: 700;
   line-height: 1.39;
   letter-spacing: 0.78px;
+  animation-name: change;
+  animation-duration: 15s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes change {
+  0% {
+  color: var(--button-color);
+  }
+  10% {
+  color: darkblue;
+  }
+  20% {
+  color: green;
+  }
+  30% {
+  color: lightseagreen;
+  }
+  40% {
+  color: seagreen;
+  }
+  50% {
+  color: yellow;
+  }
+  60% {
+  color: orange;
+  }
+  70% {
+  color: red;
+  }
+  80% {
+  color: pink;
+  }
+  90% {
+  color: darkorchid;
+  }
+  100% {
+  color: cornflowerblue;
+  }
 }
 
 .header-nav {
@@ -745,6 +786,7 @@
   left: 0;
   background: rgba(0, 0, 0, 0.2);
   width: 100%;
+  z-index: 100;
   height: 100%;
 }
 
