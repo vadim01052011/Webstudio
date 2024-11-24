@@ -1,0 +1,47 @@
+/* ===== Секція Чим Ми Займаємося ===== */
+.doing {
+    background-color: var(--header-title);
+    padding-top: 47px;
+    padding-bottom: 94px;
+    text-align: center;
+  }
+  
+  .doing-title {
+    color: var(--title-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
+  /* Список */
+  .doing-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .doing-item {
+    position: relative;
+  }
+  
+  .doing-background {
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .doing-text {
+    color: var(--header-title);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }

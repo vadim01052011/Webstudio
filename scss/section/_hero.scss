@@ -1,0 +1,54 @@
+/*Секція Герой */
+.hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/team_work.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 1600px 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  
+  .hero-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-title {
+    color: var(--header-title);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    width: 696px;
+    text-align: center;
+  }
+  
+  .hero-button {
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+    background: var(--button-color);
+    color: var(--header-title);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hero-button:hover,
+  .hero-button:focus {
+    background-color: var(--active-button);
+    outline: none;
+  }

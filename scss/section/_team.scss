@@ -1,0 +1,95 @@
+/* ===== Секція Наша Команда ===== */
+.team {
+    background-color: var(--our-command-background);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+  }
+  
+  .team-title {
+    color: var(--title-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
+  /* Карточки */
+  .team-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .team-item {
+    width: 270px;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--header-title);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-image {
+    width: 270px;
+    height: 260px;
+  }
+  /* Текст */
+  .team-text {
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+  
+  .team-name {
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.48px;
+  }
+  
+  .team-speciality {
+    color: var(--portion-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+    letter-spacing: 0.48px;
+    margin-top: 10px;
+  }
+  
+  .team-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .social-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background-color: var(--button-color);
+    outline: none;
+    .social-icon {
+      fill: var(--header-title);
+    }
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: var(--icon-color);
+    transition: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }

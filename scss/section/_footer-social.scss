@@ -1,0 +1,48 @@
+/* ===== Соцмережі ===== */
+.footer-social {
+    margin-right: 94px;
+    margin-left: 70px;
+  }
+  
+  .footer-social-title {
+    color: var(--header-title);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-social-link {
+    width: 44px;
+    height: 44px;
+    background-color: var(--social-bcg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-social-link:hover,
+  .footer-social-link:focus {
+    background-color: var(--button-color);
+    outline: none;
+  }
+  
+  .footer-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--header-title);
+  }

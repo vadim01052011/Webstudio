@@ -1,0 +1,117 @@
+/* ===== Основна Частина ===== */
+/* ===== Секція ===== */
+.projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  /* ===== Список Кнопок ===== */
+  .buttons-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+  }
+  
+  .buttons-button {
+    border: none;
+    border-radius: 4px;
+    background: var(--our-command-background);
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.48px;
+    padding: 6px 25px;
+    transition: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .buttons-button:hover, 
+  .buttons-button:focus {
+    background-color: var(--button-color);
+    color: var(--header-title);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    outline: none;
+  }
+  /* ===== Список Проєктів ===== */
+  .projects-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .projects-item {
+    border: 1px solid var(--card-border);
+    background: var(--header-title);
+    flex-basis: calc((100% - 60px) / 3);
+    transition: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .projects-item:hover, 
+  .projects-item:focus {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    /* transform: translateY(0); */
+    .image-text {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  .projects-overlay {
+    position: relative;
+    overflow: hidden;
+  
+    /*   
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out; */
+  }
+  
+  .projects-image {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-text {
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.90);
+    color: var(--header-title);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.56;
+    letter-spacing: 0.54px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100px);
+    transition: transform 2s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    /* transform: translateY(-100%); */
+  }
+  
+  .project-text {
+    padding: 20px 24px;
+  }
+  
+  .projects-name {
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.50px;
+    margin-bottom: 4px;
+  }
+  
+  .projects-type {
+    color: var(--paragraph-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.48px;
+  }

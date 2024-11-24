@@ -1,0 +1,424 @@
+//   .header {
+//     background-color: $header-title;
+//     padding: 16px 0;
+//     border-bottom: 1px $header-color solid;
+//     position: fixed;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     min-height: 60px;
+//     z-index: 100;
+
+//     @media screen and (min-width: 768px) {
+//         padding: 26px 0;
+//         min-height: 80px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         padding: 24px 0 25px 0;
+//         min-height: 80px;
+//     }
+
+//     &__flex {
+//         position: relative;
+
+//         @media screen and (min-width: 768px) {
+//             @include flex($justify: normal);
+//         }
+//     }
+
+//     &__link {
+//         @include font($color:$logo-color, $size:24px, $weight:700, $height:1.375, $letter-space:0.72px, $family: $raleway-font);
+
+//         // @media screen and (min-width: 768px){
+            
+//         // }
+
+//         // @media screen and (min-width: 1200px) {
+            
+//         // }
+
+//         @media screen and (min-width: 768px){
+//             @include font($color:$logo-color, $size:24px, $weight:700, $height:1.375, $letter-space:0.72px, $family: $raleway-font);
+//         }
+
+//         @media screen and (min-width: 1200px) {
+//             @include font($color:$logo-color, $size:26px, $weight:700, $height:1.39, $letter-space:0.78px, $family: $raleway-font);
+//         }
+//     }
+
+//     &__logo {
+//         @include font($color:$button-color, $size:24px, $weight:700, $height:1.375, $letter-space:0.72px, $family: $raleway-font);
+
+//         @media screen and (min-width: 768px) {
+//             @include font($color:$button-color, $size:24px, $weight:700, $height:1.375, $letter-space:0.72px, $family: $raleway-font);
+//         }
+
+//         @media screen and (min-width: 1200px) {
+//             @include font($color:$button-color, $size:26px, $weight:700, $height:1.39, $letter-space:0.78px, $family: $raleway-font);
+//         }
+//     }
+
+//     /* ===== Пошта та телефон ===== */
+
+//     &__list {
+//         display: none;
+//         margin-left: auto;
+
+//         @media screen and (min-width: 768px){
+//             display: flex;
+//             flex-direction: column;
+//             gap: 10px;
+//         }
+
+//         @media screen and (min-width: 1200px) {
+//             flex-direction: row;
+//             gap: 30px;
+//         }
+
+//     }
+
+//     &__connection {
+//         @include flex($justify: normal);
+//         gap: 10px;
+//         @include transition();
+
+//         @media screen and (min-width: 768px){
+//             @include font($size: 12px, $weight:500, $height:1.17, $letter-space:0.24px);
+//         }
+
+//         @media screen and (min-width: 1200px) {
+//             @include font($weight:500, $height:1.14, $letter-space:0.28px);
+//         }
+//     }
+
+//     &__item:nth-child(1) > &__connection:hover, 
+//     &__item:nth-child(1) > &__connection:focus {
+//         color: $button-color;
+//         .header__icon {
+//             fill: $button-color;
+//         }
+//     }
+
+//     &__item:nth-child(2) > &__connection:hover, 
+//     &__item:nth-child(2) > &__connection:focus {
+//         color: $button-color;
+//         .header__icon {
+//             fill: $button-color;
+//         }
+//     }
+
+//     &__item:nth-child(1) > &__connection > &__icon {
+//         fill: $paragraph-color;
+//         @include transition($name-transition:fill);
+//         width: 14px;
+//         height: 10px;
+
+//         @media screen and (min-width: 1200px) {
+//             width: 16px;
+//             height: 12px;
+//         }
+//     }
+
+//     &__item:nth-child(2) > &__connection > &__icon {
+//         fill: $paragraph-color;
+//         @include transition($name-transition:fill);
+//         width: 10px;
+//         height: 14px;
+
+//         @media screen and (min-width: 1200px) {
+//             width: 10px;
+//             height: 16px;
+//         }
+//     }
+// }
+
+// /* ===== Навігація ===== */
+
+// .nav {
+//     display: none;
+
+//     @media screen and (min-width: 768px){
+//         display: block;
+//         margin-left: 88px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         margin-left: 93px;
+//     }
+    
+
+//     &__list {
+//         display: flex;
+//         gap: 50px;
+//         position: absolute;
+//         top: 9px;
+//     }
+
+//     &__link {
+//         @include font($color:$title-color, $weight:500, $height:1.14, $letter-space:0.28px);
+//         @include transition();
+
+//         &:hover, 
+//         &:focus {
+//             color: $button-color;
+//         }
+//     }
+
+//     &__link::after {
+//         content: "";
+//         width: 100%;
+//         height: 4px;
+//         background-color: $button-color;
+//         border-radius: 2px;
+//         display: block;
+//         margin-top: 31px;
+//         opacity: 0;
+//         transform: scale(0);
+//         @include transition($name-transition:transform);
+//     }
+
+//     &__link:hover::after,
+//     &__link:focus::after {
+//         opacity: 1;
+//         transform: scale(1);
+//     }
+// }
+
+// /* ===== Активна сторінка ===== */
+
+// .active {
+//     @include font($color:$button-color, $weight:500, $height:1.14, $letter-space:0.28px);
+
+//     &::after {
+//         content: "";
+//         width: 100%;
+//         height: 4px;
+//         background-color: $button-color;
+//         border-radius: 2px;
+//         display: block;
+//         margin-top: 31px;
+//         opacity: 1;
+//     }
+// }
+
+
+
+
+
+
+
+/*Шапка*/
+.header {
+  background-color: $header-title;
+  padding: 16px 0;
+  border-bottom: 1px $header-color solid;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 60px;
+  z-index: 100;
+}
+  
+  .header__back {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .header__link {
+    color: $logo-color;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.39;
+    letter-spacing: 0.78px;
+  }
+  
+  .header__logo {
+    color: $button-color;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.39;
+    letter-spacing: 0.78px;
+    animation-name: change;
+    animation-duration: 15s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes change {
+    0% {
+    color: var(--button-color);
+    }
+    10% {
+    color: darkblue;
+    }
+    20% {
+    color: green;
+    }
+    30% {
+    color: lightseagreen;
+    }
+    40% {
+    color: seagreen;
+    }
+    50% {
+    color: yellow;
+    }
+    60% {
+    color: orange;
+    }
+    70% {
+    color: red;
+    }
+    80% {
+    color: pink;
+    }
+    90% {
+    color: darkorchid;
+    }
+    100% {
+    color: cornflowerblue;
+    }
+  }
+  
+  .header__nav {
+    margin-left: 93px;
+  }
+  /* ===== Навігація ===== */
+  .nav__list {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    top: 9px;
+  }
+  
+  .nav__link {
+    color: $title-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .nav__link:hover,
+  .nav__link:focus {
+    color: $button-color;
+  }
+  
+  .nav__list > .nav__item:nth-child(n + 2) > .nav__link::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: $button-color;
+    border-radius: 2px;
+    display: block;
+    margin-top: 31px;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .nav__list > .nav__item:nth-child(n + 2) > .nav__link:hover::after,
+  .nav__list > .nav__item:nth-child(n + 2) > .nav__link:focus::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .active {
+    color: $button-color;
+  }
+  
+  .active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: $button-color;
+    border-radius: 2px;
+    display: block;
+    margin-top: 31px;
+    opacity: 1;
+    /* position: absolute;
+      left: 0px; */
+  }
+  
+  .active:hover::after {
+    opacity: 1;
+  }
+  /* ===== Пошта та телефон ===== */
+  .header__list {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+  }
+  
+  .heading__link {
+    color: $portion-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .header__item:nth-child(1) > .heading__link:hover,
+  .heading__link:focus {
+    color: $button-color;
+    .header-icon {
+      fill: $button-color;
+    }
+  }
+  
+  .header__item:nth-child(2) > .heading__link:hover,
+  .heading__link:focus {
+    color: $button-color;
+    .header-icon {
+      fill: $button-color;
+    }
+  }
+  
+  .header__item:nth-child(1) > .heading__link > .header__icon {
+    width: 16px;
+    height: 12px;
+    fill: $portion-color;
+    transition: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .header__item:nth-child(2) > .heading__link > .header__icon {
+    width: 10px;
+    height: 16px;
+    fill: var(--portion-color);
+    transition: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
