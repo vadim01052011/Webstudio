@@ -1,54 +1,96 @@
-/*Секція Герой */
 .hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/team_work.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-size: 1600px 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+  background-image: linear-gradient($hero-gradient, $hero-gradient), url(../../images/team_work.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 320px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  overflow: hidden;
+
+  @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
   }
-  
-  .hero-box {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+
+  &__box {
+      @include flex($justify: normal);
+      flex-direction: column;
   }
-  
-  .hero-title {
-    color: var(--header-title);
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    width: 696px;
-    text-align: center;
+
+  &__title {
+      @include font($color:$header-title, $size:26px, $weight:900, $height:1.61, $letter-space:1.56px);
+      text-transform: uppercase;
+      margin: 0 auto 30px auto;
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media screen and (min-width: 480px) {
+          width: 360px;
+      }
+
+      @media screen and (min-width: 1200px) {
+          @include font($color:$header-title, $size:44px, $weight:900, $height:1.36, $letter-space:2.64px);
+          width: 696px;
+      }
   }
-  
-  .hero-button {
-    padding: 10px 32px;
-    border: none;
-    border-radius: 4px;
-    background: var(--button-color);
-    color: var(--header-title);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.96px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    transition: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__button {
+      padding: 10px 24px;
+      border: none;
+      border-radius: 4px;
+      background: $button-color;
+      @include font($color:$header-title, $size:16px, $weight:700, $height:1.88, $letter-space:0.96px);
+      box-shadow: $hero-btn-shadow;
+      @include transition($name-transition:background-color);
+      animation-name: hero-button;
+      animation-duration: 8000ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+
+      @media screen and (min-width: 768px) {
+          
+      }
+
+      @media screen and (min-width: 1200px) {
+          padding: 10px 32px;
+      }
+
+      &:hover,
+      &:focus {
+          background-color: $active-button;
+          outline: none;
+      }
   }
-  
-  .hero-button:hover,
-  .hero-button:focus {
-    background-color: var(--active-button);
-    outline: none;
+}
+
+// Анімація
+
+@keyframes hero-button {
+  0% {
+      transform: scale(1);
   }
+
+  20% {
+      transform: scale(1.25);
+  }
+
+  40% {
+      transform: scale(0.75);
+  }
+
+  60% {
+      transform: scale(1.25);
+  }
+
+  80% {
+      transform: scale(0.75);
+  }
+
+  100% {
+      transform: scale(1.25);
+  }
+}
