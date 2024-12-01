@@ -52,6 +52,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
           </ul>
         </div>
       </div>
+      <!-- <div class="menu is-hidden">
+        <button type="button">
+          <svg class="menu-svg">
+            <use href="./images/symbol-defs.svg#close-black"></use>
+          </svg>
+        </button>
+        <ul class="menu__list">
+          <li class="menu-item"><a href="./index.html" class="menu-link">Студія</a></li>
+          <li class="menu-item"><a href="./pages/portfolio.html" class="menu-link">Портфоліо</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Контакти</a></li>
+        </ul>
+        <ul class="menu__list-contact">
+          <li class="menu__item-contact"><a href="tel:+380961111111" class="menu__link-contact">+38 096 111 11 11</a></li>
+          <li class="menu__item-contact"><a href="mailto:info@devstudio.com" class="menu__link-contact">info@devstudio.com</a></li>
+        </ul>
+        <ul class="menu__list-social">
+          <li class="menu__item-social"><a href="" class="menu__link-social">Instagram</a></li>
+          <li class="menu__item-social"><a href="" class="menu__link-social">Twitter</a></li>
+          <li class="menu__item-social"><a href="" class="menu__link-social">Facebook</a></li>
+          <li class="menu__item-social"><a href="" class="menu__link-social">LinkedIn</a></li>
+        </ul>
+      </div> -->
     </header>
     <main class="main">
       <!-- Секція hero -->
@@ -105,19 +127,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
           <ul class="doing__list">
             <li class="doing__item">
               <img src="./images/computer.jpg" alt="роботазакомп'ютером" class="doing__picture">
-              <div class="doing__background">
+              <div class="doing__burn">
                 <p class="doing__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="doing__item">
               <img src="./images/tel.jpg" alt="роботазаноутбуком" class="doing__picture">
-              <div class="doing__background">
+              <div class="doing__burn">
                 <p class="doing__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="doing__item">
               <img src="./images/tablet.jpg" alt="роботазапланшетом" class="doing__picture">
-              <div class="doing__background">
+              <div class="doing__burn">
                 <p class="doing__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -133,7 +155,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               <img src="./images/igor.jpg" alt="Ігор" class="team__image">
               <div class="team__text">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
-                <p class="team__speciality">Product Designer</p>
+                <p class="team__prof">Product Designer</p>
               </div>
               <ul class="social">
                 <li class="social__item">
@@ -170,7 +192,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               <img src="./images/olga.jpg" alt="Ольга" class="team__image">
               <div class="team__text">
                 <h3 class="team__name">Ольга Рєпіна</h3>
-                <p class="team__speciality">Frontend Developer</p>
+                <p class="team__prof">Frontend Developer</p>
               </div>
               <ul class="social">
                 <li class="social__item">
@@ -207,7 +229,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               <img src="./images/mxtarasov.jpg" alt="Микола" class="team__image">
               <div class="team__text">
                 <h3 class="team__name">Микола Тарасов</h3>
-                <p class="team__speciality">Marketing</p>
+                <p class="team__prof">Marketing</p>
               </div>
               <ul class="social">
                 <li class="social__item">
@@ -244,7 +266,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               <img src="./images/mxirmakov.jpg" alt="Михайло" class="team__image" >
               <div class="team__text">
                 <h3 class="team__name">Михайло Єрмаков</h3>
-                <p class="team__speciality">UI Designer</p>
+                <p class="team__prof">UI Designer</p>
               </div>
               <ul class="social">
                 <li class="social__item">
@@ -283,55 +305,47 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       <!-- Секція Клієнти -->
       <section class="clients">
         <div class="container">
-          <h2 class="clients-title">Постійні клієнти</h2>
-          <ul class="clients-list">
-            <li class="clients-item" data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-              <a href="#" class="clients-link">
-                <svg class="clients-icon">
-                  <use class="clients-use" href="./images/symbol-defs.svg#square"></use>
+          <h2 class="clients__title">Постійні клієнти</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon">
+                  <use class="clients__use" href="./images/symbol-defs.svg#square"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">
-              <a href="#" class="clients-link">
-                <svg class="clients-icon">
-                  <use class="clients-use" href="./images/symbol-defs.svg#tagline"></use>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon">
+                  <use class="clients__use" href="./images/symbol-defs.svg#tagline"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item" data-aos="fade-up"
-            data-aos-anchor-placement="top-center">
-              <a href="#" class="clients-link">
-                <svg class="clients-icon">
-                  <use class="clients-use" href="./images/symbol-defs.svg#orange"></use>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon">
+                  <use class="clients__use" href="./images/symbol-defs.svg#orange"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item" data-aos="fade-up"
-            data-aos-anchor-placement="top-center">
-              <a href="#" class="clients-link">
-                <svg class="clients-icon">
-                  <use class="clients-use" href="./images/symbol-defs.svg#foster_peters"></use>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon">
+                  <use class="clients__use" href="./images/symbol-defs.svg#foster_peters"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">
-              <a href="#" class="clients-link">
-                <svg class="clients-icon">
-                  <use class="clients-use" href="./images/symbol-defs.svg#brand_logo"></use>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon">
+                  <use class="clients__use" href="./images/symbol-defs.svg#brand_logo"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item" data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-              <a href="#" class="clients-link">
-                <svg class="clients-icon">
-                  <use class="clients-use" href="./images/symbol-defs.svg#company"></use>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon">
+                  <use class="clients__use" href="./images/symbol-defs.svg#company"></use>
                 </svg>
               </a>
             </li>
@@ -340,111 +354,113 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       </section>
     </main>
     <!-- Підвал -->
-    <footer class="footer" data-aos="fade-up" data-aos-duration="3000">
-      <div class="container bottom">
-        <!-- Секція Адреса -->
-        <section class="ftrl-address">
-          <h2 class="footer-title" hidden>Адреса</h2>
-          <a href="./index.html" class="footer-link"><span class="footer-logo">Web</span>Studio</a>
-          <address class="footer-address">
-            <a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4270196,30.5332191,16.17z/data=!4m6!3m5!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858!16s%2Fg%2F1tctq5jv?entry=ttu" target="_blank" class="address-location">м. Київ, пр-т Лесі Українки, 26</a>
-            <ul class="address-list">
-              <li class="address-item">
-                <a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a>
-              </li>
-              <li class="address-item">
-                <a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__flex">
+          <!-- Секція Адреса -->
+          <section class="ft__address">
+            <h2 class="ft__address__title" hidden>Адреса</h2>
+            <a href="./index.html" class="ft__address__link"><span class="ft__address__logo">Web</span>Studio</a>
+            <address class="connect">
+              <a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4270196,30.5332191,16.17z/data=!4m6!3m5!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858!16s%2Fg%2F1tctq5jv?entry=ttu" target="_blank" class="connect__location">м. Київ, пр-т Лесі Українки, 26</a>
+              <ul class="connect__list">
+                <li class="connect__item">
+                  <a href="mailto:info@devstudio.com" class="connect__link">info@devstudio.com</a>
+                </li>
+                <li class="connect__item">
+                  <a href="tel:+380961111111" class="connect__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </section>
         <!-- Секція Соц. Мережі -->
-        <section class="footer-social">
-          <h2 class="footer-social-title">приєднуйтесь</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a href="https://www.instagram.com/" class="footer-social-link">
-                <svg class="footer-social-icon">
-                  <use class="footer-social-use" href="./images/symbol-defs.svg#instagram_web"></use>
+        <section class="ft__social">
+          <h2 class="ft__social__title">ПРИЄДНУЙТЕСЬ</h2>
+          <ul class="ft__social__list">
+            <li class="ft__social__item">
+              <a href="https://www.instagram.com/" class="ft__social__link">
+                <svg class="ft__social__icon">
+                  <use class="ft__social__use" href="./images/symbol-defs.svg#instagram_web"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a href="https://x.com/" class="footer-social-link">
-                <svg class="footer-social-icon">
-                  <use class="footer-social-use" href="./images/symbol-defs.svg#twitter_web"></use>
+            <li class="ft__social__item">
+              <a href="https://x.com/" class="ft__social__link">
+                <svg class="ft__social__icon">
+                  <use class="ft__social__use" href="./images/symbol-defs.svg#twitter_web"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a href="https://www.facebook.com/" class="footer-social-link">
-                <svg class="footer-social-icon">
-                  <use class="footer-social-use" href="./images/symbol-defs.svg#facebook_web"></use>
+            <li class="ft__social__item">
+              <a href="https://www.facebook.com/" class="ft__social__link">
+                <svg class="ft__social__icon">
+                  <use class="ft__social__use" href="./images/symbol-defs.svg#facebook_web"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a href="https://www.linkedin.com/" class="footer-social-link">
-                <svg class="footer-social-icon">
-                  <use class="footer-social-use" href="./images/symbol-defs.svg#linkedin"></use>
+            <li class="ft__social__item">
+              <a href="https://www.linkedin.com/" class="ft__social__link">
+                <svg class="ft__social__icon">
+                  <use class="ft__social__use" href="./images/symbol-defs.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </section>
         <!-- Секція follow -->
-        <section class="ft-follow">
-          <h2 class="follow-title">Підпишіться на розсилку</h2>
-          <form class="follow-form">
-            <input id="email" class="follow-field" placeholder="E-mail" required>
-            <button class="follow-button">
+        <section class="ft__subscribe">
+          <h2 class="ft__subscribe__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
+          <form class="ft__subscribe__form">
+            <input id="email" class="ft__subscribe__field" placeholder="E-mail" required>
+            <button class="ft__subscribe__button">
               Підписатися
-              <svg class="follow-icon">
-                <use class="follow-use" href="./images/symbol-defs.svg#icon-telegram"></use>
+              <svg class="ft__subscribe__icon">
+                <use class="ft__subscribe__use" href="./images/symbol-defs.svg#send"></use>
               </svg>
             </button>
-          </form>     
+          </form>
         </section>
       </div>
-    </footer>
+    </div>
+  </footer>
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-        <form class="modal-form">
-          <label for="name" class="modal-text">Ім'я</label>
-          <div class="modal-row">
-            <input type="text" id="name" class="modal-field" required>
-            <svg class="modal-icon">
-              <use class="modal-use" href="./images/symbol-defs.svg#icon-person"></use>
+        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal__form">
+          <label for="name" class="modal__text">Ім'я</label>
+          <div class="modal__row">
+            <input type="text" id="name" class="modal__field" required>
+            <svg class="modal__icon">
+              <use class="modal__use" href="./images/symbol-defs.svg#person"></use>
             </svg>
           </div>
-          <label for="tel" class="modal-text">Телефон</label>
-          <div class="modal-row">
-            <input type="tel" id="tel" class="modal-field" required>
-            <svg class="modal-icon">
-              <use class="modal-use" href="./images/symbol-defs.svg#icon-phone"></use>
+          <label for="tel" class="modal__text">Телефон</label>
+          <div class="modal__row">
+            <input type="tel" id="tel" class="modal__field" required>
+            <svg class="modal__icon">
+              <use class="modal__use" href="./images/symbol-defs.svg#phone-black"></use>
             </svg>
           </div>
-          <label for="mail" class="modal-text">Пошта</label>
-          <div class="modal-row">
-            <input type="email" id="mail" class="modal-field" required>
-            <svg class="modal-icon">
-              <use class="modal-use" href="./images/symbol-defs.svg#icon-email"></use>
+          <label for="mail" class="modal__text">Пошта</label>
+          <div class="modal__row">
+            <input type="email" id="mail" class="modal__field" required>
+            <svg class="modal__icon">
+              <use class="modal__use" href="./images/symbol-defs.svg#email-black"></use>
             </svg>
           </div>
-          <label for="comment" class="modal-text">Коментар</label>
-          <textarea id="comment" class="modal-comment" placeholder="Введіть текст"></textarea>
-          <label for="checkbox" class="modal-check">
-            <input type="checkbox" id="checkbox" class="modal-checkbox" required>
-            <span class="modal-q">Погоджуюся з розсилкою та приймаю</span>
-            <a href="#" class="modal-deal" target="_blank">Умови договору</a>
+          <label for="comment" class="modal__text">Коментар</label>
+          <textarea id="comment" class="modal__comment" placeholder="Введіть текст"></textarea>
+          <label for="checkbox" class="modal__check">
+            <input type="checkbox" id="checkbox" class="modal__checkbox" required>
+            <span class="modal__agree">Погоджуюся з розсилкою та приймаю</span>
+            <a href="#" class="modal__conditions" target="_blank">Умови договору</a>
           </label>
-          <button type="submit" class="modal-button">Відправити</button>
+          <button type="submit" class="modal__button">Відправити</button>
         </form>
-        <button type="button" class="modal-close" data-modal-close>
-          <svg class="modal-close-icon">
-            <use class="modal-close-use" href="./images/symbol-defs.svg#close-black"></use>
+        <button type="button" class="modal__close" data-modal-close>
+          <svg class="modal__close__icon">
+            <use class="modal__close__use" href="./images/symbol-defs.svg#close-black"></use>
           </svg>
         </button>
       </div>

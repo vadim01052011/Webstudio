@@ -1,72 +1,94 @@
 /* ===== Підписка ===== */
-.follow-title {
-    color: var(--header-title);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-top: 12px;
-    margin-bottom: 20px;
+.ft__subscribe {
+  margin-left: 0;
+  width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+
+  @media screen and (min-width: 480px) {
+      width: 450px;
   }
-  
-  .follow-form {
-    display: flex;
-    gap: 12px;
+
+  @media screen and (min-width: 768px) {
+      margin-left: 151px;
+      margin-top: 60px;
   }
-  
-  .follow-field {
-    width: 358px;
-    height: 50px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(33, 150, 243, 0);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 15px 16px;
-    color: var(--address-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: 0.48px;
-    transition: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+      width: auto;
+      margin-left: 0;
+      margin-top: 0;
   }
-  
-  .follow-field:hover,
-  .follow-field:focus {
-    outline: none;
-    border: 1px solid var(--button-color);
+
+  &__title {
+      @include font($color:$header-title, $weight:700, $height:1.14);
+      margin-top: 12px;
+      margin-bottom: 20px;
   }
-  
-  .follow-button {
-    padding: 10px 28px;
-    border: none;
-    border-radius: 4px;
-    background: var(--button-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--header-title);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.96px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__form {
+      @include flex();
+      gap: 20px;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      @media screen and (min-width: 1200px) {
+          gap: 12px;
+          flex-direction: row;
+      }
   }
-  
-  .follow-button:hover,
-  .follow-button:focus {
-    background-color: var(--active-button);
-    outline: none;
+
+  &__field {
+      width: 100%;
+      height: 50px;
+      border-radius: 4px;
+      border: 1px solid $subsribe-border;
+      background: $subsribe-input;
+      box-shadow: $subsribe-shadow;
+      padding: 15px 16px;
+      @include font($color:$address-color, $size:16px, $height:1.25, $letter-space:0.48px);
+      @include transition($name-transition:border);
+
+      @media screen and (min-width: 480px) {
+          width: 450px;
+      }
+
+      @media screen and (min-width: 1200px) {
+          width: 358px;
+      }
+
+      &:hover,
+      &:focus {
+          outline: none;
+          border: 1px solid $button-color;
+      }
   }
-  
-  .follow-icon {
-    width: 24px;
-    height: 24px;
-    fill: var(--header-title);
+
+  &__button {
+      padding: 10px 28px;
+      border: none;
+      border-radius: 4px;
+      background: $button-color;
+      box-shadow: $subsribe-shadow;
+      text-align: center;
+      @include font($color:$header-title, $size:16px, $weight:700, $height:1.88, $letter-space:0.96px);
+      @include flex();
+      gap: 10px;
+      @include transition($name-transition:background-color);
+      // margin-left: auto;
+      // margin-right: auto;
+
+      &:hover,
+      &:focus {
+          background-color: $active-button;
+          outline: none;
+      }
   }
+
+  &__icon {
+      width: 24px;
+      height: 24px;
+      fill: $header-title;
+  }
+}

@@ -50,7 +50,7 @@
       @include font($color:$title-color, $size:16px, $weight:500, $height:1.19, $letter-space:0.48px);
   }
 
-  &__speciality {
+  &__prof {
       @include font($size:16px, $height:1.19, $letter-space:0.48px);
       margin-top: 10px;
   }

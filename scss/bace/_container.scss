@@ -1,8 +1,19 @@
 /*Контейнер*/
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 4px solid rgba(14, 48, 238, 0.801);
+
+  @media screen and (min-width: 480px) {
+      width: 480px;
   }
+
+  @media screen and (min-width: 768px) {
+      width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      width: 1200px;
+  }
+}
