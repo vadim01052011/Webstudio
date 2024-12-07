@@ -1454,120 +1454,148 @@ address {
 
 /* ===== Основна Частина ===== */
 /* ===== Секція ===== */
-.projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.resources {
+  padding: 60px 0;
 }
-
-/* ===== Список Кнопок ===== */
-.buttons-list {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .resources {
+    padding: 94px 0;
+  }
 }
-
-.buttons-button {
-  border: none;
-  border-radius: 4px;
-  background: var(--our-command-background);
-  color: var(--title-color);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.63;
-  letter-spacing: 0.48px;
-  padding: 6px 25px;
-  transition: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.buttons-button:hover,
-.buttons-button:focus {
-  background-color: var(--button-color);
-  color: var(--header-title);
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-  outline: none;
-}
-
-/* ===== Список Проєктів ===== */
-.projects-list {
+.resources__list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
-
-.projects-item {
-  border: 1px solid var(--card-border);
-  background: var(--header-title);
-  flex-basis: calc((100% - 60px) / 3);
+.resources__item {
+  border: 1px solid #EEEEEE;
+  background: #FFFFFF;
+  width: 100%;
   transition: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projects-item:hover,
-.projects-item:focus {
+@media screen and (min-width: 768px) {
+  .resources__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .resources__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+.resources__item:hover, .resources__item:focus {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-  /* transform: translateY(0); */
 }
-.projects-item:hover .image-text,
-.projects-item:focus .image-text {
-  opacity: 1;
+.resources__item:hover .resources__description, .resources__item:focus .resources__description {
   transform: translateY(0);
+  opacity: 1;
 }
-
-.projects-overlay {
+.resources__overlay {
   position: relative;
   overflow: hidden;
-  /*   
-  transform: translatey(100%);
-  transition: transform 250ms ease-in-out; */
 }
-
-.projects-image {
+.resources__image {
   width: 100%;
   overflow: hidden;
 }
-
-.image-text {
+.resources__description {
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  color: var(--header-title);
+  font-family: "Roboto";
+  color: #FFFFFF;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.54px;
   position: absolute;
   top: 0;
+  left: 0;
+  overflow: hidden;
   opacity: 0;
-  transition: opacity;
+  transition: opacity transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100px);
-  transition: transform 2s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  /* transform: translateY(-100%); */
+  transform: translateY(100%);
 }
-
-.project-text {
+@media screen and (min-width: 768px) {
+  .resources__description {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .resources__description {
+    padding: 63px 24px;
+  }
+}
+.resources__text {
   padding: 20px 24px;
 }
-
-.projects-name {
-  color: var(--title-color);
+.resources__name {
+  font-family: "Roboto";
+  color: #212121;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.08px;
   margin-bottom: 4px;
 }
-
-.projects-type {
-  color: var(--paragraph-color);
+.resources__type {
+  font-family: "Roboto";
+  color: #757575;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.88;
   letter-spacing: 0.48px;
+}
+
+/* ===== Список Кнопок ===== */
+.choose {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-basis: calc((100% - 16px) / 3);
+  max-width: 326px;
+  gap: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-basis: calc((100% - 32px) / 5);
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choose {
+    margin-bottom: 50px;
+  }
+}
+.choose__button {
+  border: none;
+  border-radius: 4px;
+  background: #F5F4FA;
+  font-family: "Roboto";
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.48px;
+  padding: 6px 22px;
+  transition: color background-color box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.choose__button:hover, .choose__button:focus {
+  background-color: #2196F3;
+  color: #FFFFFF;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  outline: none;
 }/*# sourceMappingURL=main.css.map */
