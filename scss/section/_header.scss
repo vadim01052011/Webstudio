@@ -48,14 +48,14 @@
     }
 
     &__logo {
-        @include font($color:$button-color, $size:24px, $weight:700, $height:1.375, $letter-space:0.72px, $family: $raleway-font);
+        @include font($color:$knob-color, $size:24px, $weight:700, $height:1.375, $letter-space:0.72px, $family: $raleway-font);
 
         @media screen and (min-width: 768px) {
-            @include font($color:$button-color, $size:24px, $weight:700, $height:1.375, $letter-space:0.72px, $family: $raleway-font);
+            @include font($color:$knob-color, $size:24px, $weight:700, $height:1.375, $letter-space:0.72px, $family: $raleway-font);
         }
 
         @media screen and (min-width: 1200px) {
-            @include font($color:$button-color, $size:26px, $weight:700, $height:1.39, $letter-space:0.78px, $family: $raleway-font);
+            @include font($color:$knob-color, $size:26px, $weight:700, $height:1.39, $letter-space:0.78px, $family: $raleway-font);
         }
     }
 
@@ -94,9 +94,9 @@
 
     &__item:nth-child(1) > &__social:hover, 
     &__item:nth-child(1) > &__social:focus {
-        color: $button-color;
+        color: $knob-color;
         .header__icon {
-            fill: $button-color;
+            fill: $knob-color;
         }
     }
 
@@ -104,7 +104,7 @@
     &__item:nth-child(2) > &__social:focus {
         color: $button-color;
         .header__icon {
-            fill: $button-color;
+            fill: $knob-color;
         }
     }
 
@@ -161,7 +161,7 @@
 
         &:hover, 
         &:focus {
-            color: $button-color;
+            color: $knob-color;
         }
     }
 
@@ -169,7 +169,7 @@
         content: "";
         width: 100%;
         height: 4px;
-        background-color: $button-color;
+        background-color: $knob-color;
         border-radius: 2px;
         display: block;
         margin-top: 31px;
@@ -188,13 +188,13 @@
 /* ===== Активна сторінка ===== */
 
 .active {
-    @include font($color:$button-color, $weight:500, $height:1.14, $letter-space:0.28px);
+    @include font($color:$knob-color, $weight:500, $height:1.14, $letter-space:0.28px);
 
     &::after {
         content: "";
         width: 100%;
         height: 4px;
-        background-color: $button-color;
+        background-color: $knob-color;
         border-radius: 2px;
         display: block;
         margin-top: 31px;
@@ -202,82 +202,3 @@
     }
 }
 
-// ===== Бургер меню =====
-
-
-// .menu {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100vh;
-//   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
-//   padding: 48px 40px;
-//   opacity: 1;
-//   background-color: white;
-// }
-// .is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
-// .menu__btn {
-//   border: none;
-//   background-color: transparent;
-//   position: absolute;
-//   top: 10px;
-//   right: 15px;
-// }
-
-// .menu__close {
-//   width: 40px;
-//   height: 40px;
-//   fill: #000000;
-
-// }
-// .menu__btn:hover {
-//   .menu__close {
-// fill: black;
-//   }
-// }
-// .menu__list {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 35px;
-// }
-// .menu__link {
-
-//     font-size: 40px;
-//     font-weight: 500;
-//     letter-spacing: 0.8px;
-//     line-height: 1.17;
-// }
-// .menu__link:hover {
-
-// }
-
-// .ssw {
-//     position: absolute;
-//     bottom: 48px;
-// }
-
-// .menu__list-contact {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 32px;
-
-// margin-bottom: 64px;
-// }
-// .menu__link-contact {
-
-//     font-size: 24px;
-//     font-weight: 500;
-//     line-height: 1.08;
-//     letter-spacing: 0.48px;
-    
-// }
-// .menu__item-contact:first-child > .menu__link-contact {
-
-//     font-size: 34px;
-//     line-height: 1.17;
-//     letter-spacing: 0.68px;
-// }

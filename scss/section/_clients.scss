@@ -65,9 +65,9 @@
       &:hover,
       &:focus {
           outline: none;
-          border: 1px solid $button-color;
+          border: 1px solid $knob-color;
           .clients__icon {
-              fill: $button-color;
+              fill: $knob-color;
           }
       }
   }
